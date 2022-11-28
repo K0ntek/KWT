@@ -48,7 +48,7 @@ const HeaderQuestions = () => {
                             <div className="Qelements" style={{
                                                     background: element.bg,
                                                     color: element.color
-                                                 }}>
+                                                }}>
                                 {((window.innerWidth>1120) && (i % 2 == 0)) && <div className="Qimage" id="img "style={{
                                     background:`url(${element.img})`,
                                 }}>
@@ -71,7 +71,7 @@ const HeaderQuestions = () => {
                                 {((window.innerWidth>1120) && (i % 2 != 0)) && <div className="Qimage" id="img" style={{
                                     background:`url(${element.img})`,
                                 }}>
-                                   <div className="Qimg"></div>
+                                    <div className="Qimg"></div>
                                 </div>}
                             </div>
                         )
