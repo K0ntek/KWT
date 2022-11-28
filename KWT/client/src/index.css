@@ -47,11 +47,11 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: 5;
+
 }
 
 .sliderNote p{
 	font-size: 90px;
-	text-align: justify;
 	margin: auto;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -60,12 +60,13 @@ body {
 	overflow: hidden;
 	position: relative;
 	top: 30%;
-	left: 50%;
-	transform: translatex(-20%);
+	left: 20%;
+	margin: auto;
 }
 .hiddenText{
 	transform: translateY(100%);
 	font-weight: 800;
+	text-align: justify;
 }
 
 .slider{
@@ -216,7 +217,8 @@ span {
 .line {
 	width: 30px;
 	height: 4px;
-	background: #082217;
+	/* background: #082217; */
+	background: rgb(114, 114, 114);
 	transition: 0.4s;
 }
 
@@ -521,6 +523,11 @@ span {
 		right: 0%;
 		transition: 0.4s;
 	}
+
+	.sliderNote p{
+		font-size: 80px;
+	}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -539,6 +546,14 @@ span {
 
 	.header_elements {
 		row-gap: 10%;
+	}
+
+	.sliderNote p{
+		font-size: 70px;
+	}
+	
+	.hideText{
+		left: 10%;
 	}
 }
 
@@ -565,6 +580,15 @@ span {
 	.Qimage{
 		width: 80%;
 		}
+
+	.sliderNote p{
+			font-size: 60px;
+	}
+		
+	.hideText{
+			overflow: hidden;
+			left:0;
+	}
 }
 
 
@@ -597,5 +621,15 @@ span {
 
 	.kwt2 {
 		right: -50%;
+	}
+	.sliderNote p{
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.sliderNote p{
+		font-size: 30px;
+		font-weight: 400;
 	}
 }

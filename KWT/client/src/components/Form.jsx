@@ -160,12 +160,12 @@ const Form = () => {
 						)}
 					</div>
 				</div>
-				<ReCAPTCHA
+				{/* <ReCAPTCHA
 					className="captcha"
 					onChange={change}
 					sitekey={process.env.REACT_APP_RECAPTCHA}
 					ref={reRef}
-				/>
+				/> */}
 				<input
 					type="submit"
 					value="Zarejestruj"
