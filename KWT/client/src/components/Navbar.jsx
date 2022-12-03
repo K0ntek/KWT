@@ -48,7 +48,7 @@ const Navbar = () => {
 						</Link>
 					</li>
 
-					<li onClick={change}>
+					{/* <li onClick={change}>
 						<Link to={"/"}>
 							<span
 								style={{
@@ -60,11 +60,11 @@ const Navbar = () => {
 								AUTORZY
 							</span>
 						</Link>
-					</li>
-
-					{/* <li onClick={change}>
-						<Link to={"/"}>PYTANIA Z POPRZEDNICH LAT</Link>
 					</li> */}
+
+					<li onClick={change}>
+						<Link to={"/"}>AKTUALNOŚCI</Link>
+					</li>
 				</ul>
 			</div>
 		</div>

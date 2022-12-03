@@ -39,7 +39,7 @@ body {
 	grid-template-columns: repeat(3, fit-content);
 }
 
-.sliderNote {
+.sliderNote{
 	background: white;
 	position: fixed;
 	top: 0;
@@ -47,34 +47,32 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: 5;
-
 }
 
-.sliderNote p {
+.sliderNote p{
 	font-size: 90px;
+	text-align: justify;
 	margin: auto;
 	font-family: 'Montserrat', sans-serif;
 }
 
-.hideText {
+.hideText{
 	overflow: hidden;
 	position: relative;
 	top: 30%;
-	left: 20%;
-	margin: auto;
+	left: 50%;
+	transform: translatex(-20%);
 }
-
-.hiddenText {
+.hiddenText{
 	transform: translateY(100%);
 	font-weight: 800;
-	text-align: justify;
 }
 
-.slider {
+.slider{
 	background: rgb(80, 80, 80);
 	position: fixed;
-	top: 0;
-	left: 0;
+	top:0;
+	left:0;
 	width: 100%;
 	height: 100%;
 	z-index: 7;
@@ -87,9 +85,8 @@ body {
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: 100%;
-	background: url("https://images.pexels.com/photos/7238759/pexels-photo-7238759.jpeg?auto=compress&cs=tinysrgb&w=1600");
+	background: linear-gradient(135deg, transparent ,rgba(38, 114, 82, 0.2) , rgba(0, 0, 0, 0.8)),url("https://images.pexels.com/photos/7238759/pexels-photo-7238759.jpeg?auto=compress&cs=tinysrgb&w=1600");
 	/* background: url("https://wallpapercave.com/wp/wp9473649.jpg"); */
-
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: 5px 5px 30px 0px black;
@@ -150,14 +147,12 @@ span {
 .kwt h1 {
 	margin: 0;
 }
-
-.kwtI {
+.kwtI{
 	position: relative;
 	left: 230px;
 	opacity: 0;
 }
-
-.kwtIII {
+.kwtIII{
 	position: relative;
 	left: -230px;
 	opacity: 0;
@@ -216,7 +211,6 @@ span {
 	color: rgb(255, 255, 255);
 }
 
-
 .socials a {
 	font-size: 25px;
 	color: rgb(0, 0, 0);
@@ -242,8 +236,7 @@ span {
 .line {
 	width: 30px;
 	height: 4px;
-	/* background: #082217; */
-	background: rgb(114, 114, 114);
+	background: rgb(56, 15, 0);
 	transition: 0.4s;
 }
 
@@ -412,14 +405,14 @@ span {
 	/* z-index: -1; */
 }
 
-.Qelements:hover .Qimage {
+.Qelements:hover .Qimage{
 	transform: rotate(0deg);
 	border-radius: 50%;
 }
 
 
-.Qelements:hover .Qimg {
-	left: 0;
+.Qelements:hover .Qimg{
+	left:0;
 	border-radius: 50%;
 }
 
@@ -441,7 +434,7 @@ span {
 	aspect-ratio: 1/1;
 	z-index: 4;
 	position: relative;
-	left: 100%;
+	left:100%;
 	transition: .6s;
 	/* background: linear-gradient(135deg, rgba(150, 113, 71,.6), rgba(0,0,0,.8)); */
 	/* background: linear-gradient(135deg, rgba(55, 163, 116, 0.5), rgba(0, 0, 0, 0.5)); */
@@ -449,7 +442,7 @@ span {
 }
 
 
-.content {
+.content{
 	height: fit-content;
 	width: 90%;
 	text-align: center;
@@ -458,8 +451,8 @@ span {
 	align-items: center;
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
-
-
+	
+	
 	overflow-y: hidden;
 }
 
@@ -512,7 +505,6 @@ span {
 		display: grid;
 		grid-template-columns: 100%;
 	}
-
 	.header_questions {
 		display: grid;
 		grid-template-columns: 100%;
@@ -521,15 +513,15 @@ span {
 
 	.Qelements {
 		grid-template-columns: 100%;
-		grid-template-rows: repeat(2, auto);
+		grid-template-rows: repeat(2,auto);
 		padding-top: 30px;
 		padding-bottom: 200px;
 		/* margin: 20px 0; */
 	}
 
-	.content {
+	.content{
 		height: 100%;
-		top: 20%;
+		top:20%;
 	}
 }
 
@@ -549,11 +541,6 @@ span {
 		right: 0%;
 		transition: 0.4s;
 	}
-
-	.sliderNote p {
-		font-size: 80px;
-	}
-
 }
 
 @media screen and (max-width: 800px) {
@@ -572,14 +559,6 @@ span {
 
 	.header_elements {
 		row-gap: 10%;
-	}
-
-	.sliderNote p {
-		font-size: 70px;
-	}
-
-	.hideText {
-		left: 10%;
 	}
 }
 
@@ -603,18 +582,9 @@ span {
 		right: -30%;
 	}
 
-	.Qimage {
+	.Qimage{
 		width: 80%;
-	}
-
-	.sliderNote p {
-		font-size: 60px;
-	}
-
-	.hideText {
-		overflow: hidden;
-		left: 0;
-	}
+		}
 }
 
 
@@ -647,16 +617,5 @@ span {
 
 	.kwt2 {
 		right: -50%;
-	}
-
-	.sliderNote p {
-		font-size: 50px;
-	}
-}
-
-@media screen and (max-width: 360px) {
-	.sliderNote p {
-		font-size: 30px;
-		font-weight: 400;
 	}
 }
